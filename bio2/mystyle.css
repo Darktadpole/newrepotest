@@ -1,0 +1,79 @@
+a:link,a:visited {
+
+	color: orange;
+}
+
+
+
+a:hover {
+
+	color: red;
+}
+
+
+p {
+	text-indent:50px;
+
+}
+
+
+body.b {
+
+
+background: -webkit-linear-gradient(green,#145a32);
+background: -o-linear-gradient(green,#145a32);
+background: -moz-linear-gradient(green,#145a32);
+background: linear-gradient(green,#145a32);
+	text-indent:50px;
+	padding: 40px;
+	color: yellow;
+	line-height: 100px;
+	font-size: 20px;
+}
+
+
+
+
+body.c {
+
+
+background: -webkit-linear-gradient(green,#145a32);
+background: -o-linear-gradient(green,#145a32);
+background: -moz-linear-gradient(green,#145a32);
+background: linear-gradient(green,#145a32);
+	padding: 20px;
+	color: yellow;
+	line-height: 30px;
+	font-size: 20px;
+}
+
+
+h1 {
+
+	font-weight: bolder;
+	text-align: center;
+	color: orange;
+}
+
+
+
+h2 {
+
+	font-weight: bolder;
+}
+
+
+
+span {
+
+	font-weight: bold;
+}
+
+
+#main {
+
+
+
+border:10px yellow double; border-radius:10px; 
+}
+
