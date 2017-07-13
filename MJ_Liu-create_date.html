@@ -6,10 +6,13 @@
 <body>
 
 <script type="text/javascript">
+// define recent date value
 	var date = new Date()
-	var dd = new Date(2300,12,25,11,59,57,0)
 
-	console.log("The date objects are " + Math.abs(date.getFullYear()-dd.getFullYear()) + " Years " + Math.abs(date.getMonth()-dd.getMonth()) + " Months " + Math.abs(date.getDay()-dd.getDay()) + " Days " + Math.abs(date.getHours()-dd.getHours()) + " Hours " + Math.abs(date.getMinutes()-dd.getMinutes()) + " Minutes and " + Math.abs(date.getSeconds()-dd.getSeconds()) + " Seconds from each other" )
+// define desired date value
+	var dd = new Date(2300,12,25,11,59,57,0)
+//use console.log to display the time that two date objects are apart from (get the subtraction of two date objiect value )
+	console.log("The date objects are " + Math.abs(date.getFullYear()-dd.getFullYear()) /*get a subtraction of two got year value, so on to the followed rest of time value*/ + " Years " + Math.abs(date.getMonth()-dd.getMonth()) + " Months " + Math.abs(date.getDay()-dd.getDay()) + " Days " + Math.abs(date.getHours()-dd.getHours()) + " Hours " + Math.abs(date.getMinutes()-dd.getMinutes()) + " Minutes and " + Math.abs(date.getSeconds()-dd.getSeconds()) + " Seconds from each other" )
 
 
 
