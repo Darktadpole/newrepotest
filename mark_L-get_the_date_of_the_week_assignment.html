@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Get Day of the Week</title>
+</head>
+<body style="text-align: center;  margin:0 auto; font-size: 30px; color: red;">
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+// create date object with current date and time's information
+var date = new Date();
+	
+
+// get the current day of the week as a value to be compared in each case
+switch(date.getDay()) {
+case 0:// value to be compared with the current day of the week
+
+// if the case value match current day of the week, print out the welcome message of current day 
+document.write("<h1>Welcome, Today is Sunday</h1>");
+
+break;// keeps switch statement from checking remaining cases
+
+case 1:// value to be compared with the current day of the week
+document.write("<h1>Welcome, Today is Monday</h1>");
+break;
+case 2:// value to be compared with the current day of the week
+document.write("<h1>Welcome, Today is Tuesday</h1>");
+break;
+case 3:// value to be compared with the current day of the week
+document.write("<h1>Welcome, Today is Wednesday</h1>");
+break;
+case 4:// value to be compared with the current day of the week
+document.write("<h1>Welcome, Today is Thursday</h1>");
+case 5:// value to be compared with the current day of the week
+document.write("<h1>Welcome, Today is Friday</h1>");
+break;
+case 6:// value to be compared with the current day of the week
+document.write("<h1>Welcome, Today is Saturday</h1>");
+break;
+
+}
+
+
+
+</script>
+
+
+
+
+
+</body>
+</html>

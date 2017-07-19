@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Find the student's average</title>
+</head>
+<body>
+
+
+<script type="text/javascript">
+
+// define the grade Array
+var grade = [80,77,88,95,68];
+
+// calculate the sum in the Array
+sum = grade.reduce((previous, current) => current += previous);
+
+// calculate the average
+var average= parseInt(sum/grade.length);
+
+// print out the average in the console
+console.log("The student's average is " + average);
+
+
+// create the condition that average grade below 60
+if (average<60) {
+
+//if condition is true, print out the letter grade is F
+console.log("The student's Letter Grade is F");
+
+// create the condition that average grade is up to 70
+}else if (average<=70) {
+
+//if condition is true, print out the letter grade is D
+console.log("The student's Letter Grade is D");
+
+// create the condition that average grade is up to 79
+}else if(average<=79) {
+
+//if condition is true, print out the letter grade is C
+console.log("The student's Letter Grade is C");
+
+// create the condition that average grade is up to 89
+}else if(average<=89) {
+
+//if condition is true, print out the letter grade is B
+console.log("The student's Letter Grade is B");
+
+// if all the pre conditions are false, then the last condition of 'average grade is up to 100' is true
+}else  {
+
+//print out the letter grade is A
+console.log("The student's Letter Grade is A");
+
+}
+
+
+
+
+
+</script>
+
+
+
+
+</body>
+</html>
