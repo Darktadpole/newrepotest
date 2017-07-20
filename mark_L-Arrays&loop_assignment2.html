@@ -1,36 +1,31 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Arrays and Loops pt.2</title>
+    <title>Arrays and Loops pt.2</title>
 </head>
+
 <body style="margin: 50px; text-align: center;color: blue;font-size: 30px;">
 
 
-<script type="text/javascript">
-//define Array array	
-var array = [5, 2, 10, 0, 50, 1900, 25, 25];
-
-//define sum
-var sum=0;
-
-//set initial value to 0, condition as loop numbers not greater than the length of array, increase loop number by 1 in every loop
-for (i=0;i<array.length;i++){
-
-//every time the for statement iterate, sum value plus the element in array by order, so on an on until the condition is false
-sum+=array[i];
-}
-
-//print out array in string
-document.write("array = [5, 2, 10, 0, 50, 1900, 25, 25]<br><br>");
-
-//print out the sum
-document.write("<h3>The sum of all elements in array is " + '<font color="red">' + sum + '</font></h3>');
-
-
-
-</script>
+    <script type="text/javascript">
+        //define Array array	
+        var array = [5, 2, 10, 0, 50, 1900, 25, 25];
+        //define sum
+        var sum = 0;
+        //set initial value to 0, condition as loop numbers not greater than the length of array, increase loop number by 1 in every loop
+        for (i = 0; i < array.length; i++) {
+            //every time the for statement iterate, sum value plus the element in array by order, so on an on until the condition is false
+            sum += array[i];
+        }
+        //print out array in string
+        document.write("array = [5, 2, 10, 0, 50, 1900, 25, 25]<br><br>");
+        //print out the sum
+        document.write("<h3>The sum of all elements in array is " + '<font color="red">' + sum + '</font></h3>');
+    </script>
 
 
 
 </body>
+
 </html>

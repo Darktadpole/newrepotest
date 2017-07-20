@@ -1,29 +1,32 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Arrays & DOMS Assignment</title>
+    <title>Arrays & DOMS Assignment</title>
 </head>
+
 <body style="text-align: center;margin: 0 auto;font-size: 50px;color: red;">
 
-<!--Create empty HTML text element and display elements -->
-<p id="pr"><h1></h1></p>
+    <!--Create empty HTML text element and display elements -->
+    <p id="pr">
+        <h1></h1>
+    </p>
 
 
-<script type="text/javascript">
-
-
-//define the Array elements separated by commas
-	var fruits = ["apple","orange","kiwi"]; 
-//Create empty HTML text element and display elements separated by commas	
-	document.getElementById("pr").innerHTML = fruits;
-//use prompt ("Add more fruit") to add an element to the end of the array
-	fruits.push(prompt("Add more fruits"));
-//remove the first element in the Array
-	fruits.shift();
-//sort the elements
-	fruits.sort();
-//display elements separated by " with " in HTML text element
-	document.getElementById("pr").innerHTML = fruits.join(" with ");
-</script>
+    <script type="text/javascript">
+        //define the Array elements separated by commas
+        var fruits = ["apple", "orange", "kiwi"];
+        //Create empty HTML text element and display elements separated by commas	
+        document.getElementById("pr").innerHTML = fruits;
+        //use prompt ("Add more fruit") to add an element to the end of the array
+        fruits.push(prompt("Add more fruits"));
+        //remove the first element in the Array
+        fruits.shift();
+        //sort the elements
+        fruits.sort();
+        //display elements separated by " with " in HTML text element
+        document.getElementById("pr").innerHTML = fruits.join(" with ");
+    </script>
 </body>
+
 </html>

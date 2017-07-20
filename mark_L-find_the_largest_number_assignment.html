@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Find the largest number assinment</title>
+</head>
+
+<body>
+
+    <script type="text/javascript">
+        // define variables num1,num2,num3 equal to the value that you type in the prompt as interger
+        var num1 = prompt("Type in your 1st number, all decimals will covert to integers automatically");
+        var num2 = prompt("Type in your 2nd number, all decimals will covert to integers automatically");
+        var num3 = prompt("Type in your 3rd number, all decimals will covert to integers automatically");
+        // returns the largest integer less than or equal to the value that you type in the prompt.
+        num1 = Math.floor(num1);
+        num2 = Math.floor(num2);
+        num3 = Math.floor(num3);
+        // define the variable 'response' with string that tell inputer some value they typed in is not number
+        var response = ("Some value you typed in is not a number");
+        // define the variable 'response2' with string that tell inputers there is no any value entered
+        var response2 = ("You did not enter any value");
+        // create the condition of if the inputer cancel all the prompt or leave all the value blank, if the condition is true,go to console.log()
+        if ((num1 == '' || num1 == null || num1.length <= 0) && (num2 == '' || num2 == null || num2.length <= 0) && (num3 == '' || num3 == null || num3.length <= 0)) {
+            // print out the string "There is some value you did not enter" to the console
+            console.log(response2);
+
+            // if the pre condition is false, create the condition of if either value inputer type in is not a number, check, if the condition is true,go to console.log()
+        } else if (isNaN(num1) || isNaN(num2) || isNaN(num3)) {
+            // print out the string "Some value you typed in is not a number" to the console
+            console.log(response);
+            // if the pre conditions are false, then create the condition of num1 is the biggest number, check, if the condition is true,go to console.log()
+        } else if (num1 > num2 && num1 > num3) {
+            // print out the result that "num1 is the biggest numbers" to the console
+            console.log(num1 + " is the biggest numbers");
+            // if all pre conditions are false, then create the condition of num2 is the biggest number, check, if the condition is true,go to console.log()
+        } else if (num2 > num1 && num2 > num3) {
+            // print out the result that "num2 is the biggest numbers" to the console
+            console.log(num2 + " is the biggest numbers");
+            // if all the pre conditions are false, then the last condition of 'num3 is the biggest number' is true
+        } else /* as the rest condition of pre conditions, last condition of num3 is the biggest number don't need to be defined specifically */ {
+            // print out the result that "num3 is the biggest numbers" to the console
+            console.log(num3 + " is the biggest numbers");
+        }
+    </script>
+
+
+</body>
+
+</html>

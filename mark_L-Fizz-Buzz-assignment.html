@@ -1,50 +1,38 @@
 <!DOCTYPE html>
 <html>
+
 <body style="color: blue; font-size: 40px; margin: 55px; line-height:150%;">
 
 
 
 
-<script type="text/javascript">
-
-//define the initial value
-var i=1;
-
-//set the conditon that the loop numbers will not greater than 100
-while (i<=100){
-
-//set the condition of if the round number of (loop number devided by 3) and round number of (loop number devided by 5) both equal to 0
-if ( ((i % 3)==0) && ((i % 5)==0) ){
-
-//if condition is ture, print out "FizzBuzz"
-document.write(" FizzBuzz ,");
-
-//if pre condition false, set the condition of if the round number of (loop number devided by 3) is equal to 0
-}else if ((i % 3)==0){
-
-//if condition is ture, print out "Fizz"
-document.write(" Fizz ,");
-
-//if pre condition false, set the condition of if the round number of (loop number devided by 5) is equal to 0
-}else if ((i % 5)==0){
-
-//if condition is ture, print out "Buzz"
-document.write(" Buzz ,");
-
-//if all pre condition false
-}else {
-
-//print out the else loop numbers
-document.write(" " + i + " ,");
-}
-
-//increase the initial number by 1 every loop
-i++;
-}
-
-
-
-</script>
+    <script type="text/javascript">
+        //define the initial value
+        var i = 1;
+        //set the conditon that the loop numbers will not greater than 100
+        while (i <= 100) {
+            //set the condition of if the round number of (loop number devided by 3) and round number of (loop number devided by 5) both equal to 0
+            if (((i % 3) == 0) && ((i % 5) == 0)) {
+                //if condition is ture, print out "FizzBuzz"
+                document.write(" FizzBuzz ,");
+                //if pre condition false, set the condition of if the round number of (loop number devided by 3) is equal to 0
+            } else if ((i % 3) == 0) {
+                //if condition is ture, print out "Fizz"
+                document.write(" Fizz ,");
+                //if pre condition false, set the condition of if the round number of (loop number devided by 5) is equal to 0
+            } else if ((i % 5) == 0) {
+                //if condition is ture, print out "Buzz"
+                document.write(" Buzz ,");
+                //if all pre condition false
+            } else {
+                //print out the else loop numbers
+                document.write(" " + i + " ,");
+            }
+            //increase the initial number by 1 every loop
+            i++;
+        }
+    </script>
 
 </body>
+
 </html>

@@ -1,114 +1,68 @@
 <html>
+
 <body style="font-size: 30px; margin: 55px; line-height:150%;">
 
 
 
 
-<script>
-
-//define color Array
-var color = ["red","orange","yellow","green","indigo","blue","violet"];
-
-//define ordinal numeric contractions  Array
-var o = ["st","nd","rd","th"];
-
-//print out if stament way title
-document.write('<font color="red">' + "<h1>1.The If Statement Way</h1>" + '</font>')
-
-
-
-
-//set initial value and condition and incrementation for for loop
-for (i=0; i<color.length; i++) {
-
-//set condition of if loop number less than the amount of o Array
-if (i<o.length) {
-
-//if condition is true, print out Ordinal Numbers(value) + numeric contractions(o Array value) + string + color Array (value)
-document.write((i+1) + o[i] + " choice is "+ color[i] +"<br>");
-
-}
-
-//if pre condition is false 
-else {
-
-//print out Ordinal Numbers(value) + numeric contractions(last value of o Array:"th") + string + color Array (value)
-document.write((i+1) + o[o.length-1] + " choice is " +color[i] + "<br>");
-
-}
-}
-
-
-
-
-
-
-//print out switch stament way title
-document.write('<font color="blue">' + "<h1>2.The Switch Statement Way</h1>" + '</font>')
-
-
-
-
-//set initial value and condition and incrementation for for loop
-for (i=0; i<color.length; i++) {
-
-//start switch statement with expression i
-switch (i){
-
-case 0://value to be compared with expression i
-
-//if value conditon is true, print out Ordinal Numbers(value) + numeric contractions(o Array value) + strine + color Array (value)
-document.write('<font color="red">' + (i+1) + o[i] + " choice is " + color[i] + '</font>' + "<br>");
-
-break;// keep switch statement from checking remaing case
-
-case 1://value to be compared with expression i
-
-//if value conditon is true, print out Ordinal Numbers(value) + numeric contractions(o Array value) + strine + color Array (value)
-document.write('<font color="orange">' + (i+1) + o[i] + " choice is " + color[i] + '</font>' + "<br>");
-
-break;// keep switch statement from checking remaing case
-
-case 2://value to be compared with expression i
-
-//if value conditon is true, print out Ordinal Numbers(value) + numeric contractions(o Array value) + strine + color Array (value)
-document.write('<font color="yellow">' + (i+1) + o[i] + " choice is " + color[i] + '</font>' + "<br>");
-
-break;// keep switch statement from checking remaing case
-
-case 3://value to be compared with expression i
-
-//if value conditon is true, print out Ordinal Numbers(value) + numeric contractions(o Array value) + strine + color Array (value)
-document.write('<font color="green">' + (i+1) + o[i] + " choice is " + color[i] +'</font>' + "<br>");
-
-break;// keep switch statement from checking remaing case
-
-case 4://value to be compared with expression i
-
-//if value conditon is true, print out Ordinal Numbers(value) + numeric contractions(o Array value) + strine + color Array (value)
-document.write('<font color="indigo">' + (i+1) + o[o.length-1] + " choice is " + color[i] +'</font>' + "<br>");
-
-break;// keep switch statement from checking remaing case
-
-case 5://value to be compared with expression i
-
-//if value conditon is true, print out Ordinal Numbers(value) + numeric contractions(o Array value) + strine + color Array (value)
-document.write('<font color="blue">' + (i+1) + o[o.length-1] + " choice is " + color[i] +'</font>' + "<br>");
-
-break;// keep switch statement from checking remaing case
-
-case 6://value to be compared with expression i
-
-//if value conditon is true, print out Ordinal Numbers(value) + numeric contractions(o Array value) + strine + color Array (value)
-document.write('<font color="violet">' + (i+1) + o[o.length-1] + " choice is " + color[i] +'</font>' + "<br>");
-
-break;// keep switch statement from checking remaing case
-
-}
-}
-
-
-</script>
+    <script>
+        //define color Array
+        var color = ["red", "orange", "yellow", "green", "indigo", "blue", "violet"];
+        //define ordinal numeric contractions  Array
+        var o = ["st", "nd", "rd", "th"];
+        //print out if stament way title
+        document.write('<font color="red">' + "<h1>1.The If Statement Way</h1>" + '</font>')
+            //set initial value and condition and incrementation for for loop
+        for (i = 0; i < color.length; i++) {
+            //set condition of if loop number less than the amount of o Array
+            if (i < o.length) {
+                //if condition is true, print out Ordinal Numbers(value) + numeric contractions(o Array value) + string + color Array (value)
+                document.write((i + 1) + o[i] + " choice is " + color[i] + "<br>");
+            }
+            //if pre condition is false 
+            else {
+                //print out Ordinal Numbers(value) + numeric contractions(last value of o Array:"th") + string + color Array (value)
+                document.write((i + 1) + o[o.length - 1] + " choice is " + color[i] + "<br>");
+            }
+        }
+        //print out switch stament way title
+        document.write('<font color="blue">' + "<h1>2.The Switch Statement Way</h1>" + '</font>')
+            //set initial value and condition and incrementation for for loop
+        for (i = 0; i < color.length; i++) {
+            //start switch statement with expression i
+            switch (i) {
+                case 0: //value to be compared with expression i
+                    //if value conditon is true, print out Ordinal Numbers(value) + numeric contractions(o Array value) + strine + color Array (value)
+                    document.write('<font color="red">' + (i + 1) + o[i] + " choice is " + color[i] + '</font>' + "<br>");
+                    break; // keep switch statement from checking remaing case
+                case 1: //value to be compared with expression i
+                    //if value conditon is true, print out Ordinal Numbers(value) + numeric contractions(o Array value) + strine + color Array (value)
+                    document.write('<font color="orange">' + (i + 1) + o[i] + " choice is " + color[i] + '</font>' + "<br>");
+                    break; // keep switch statement from checking remaing case
+                case 2: //value to be compared with expression i
+                    //if value conditon is true, print out Ordinal Numbers(value) + numeric contractions(o Array value) + strine + color Array (value)
+                    document.write('<font color="yellow">' + (i + 1) + o[i] + " choice is " + color[i] + '</font>' + "<br>");
+                    break; // keep switch statement from checking remaing case
+                case 3: //value to be compared with expression i
+                    //if value conditon is true, print out Ordinal Numbers(value) + numeric contractions(o Array value) + strine + color Array (value)
+                    document.write('<font color="green">' + (i + 1) + o[i] + " choice is " + color[i] + '</font>' + "<br>");
+                    break; // keep switch statement from checking remaing case
+                case 4: //value to be compared with expression i
+                    //if value conditon is true, print out Ordinal Numbers(value) + numeric contractions(o Array value) + strine + color Array (value)
+                    document.write('<font color="indigo">' + (i + 1) + o[o.length - 1] + " choice is " + color[i] + '</font>' + "<br>");
+                    break; // keep switch statement from checking remaing case
+                case 5: //value to be compared with expression i
+                    //if value conditon is true, print out Ordinal Numbers(value) + numeric contractions(o Array value) + strine + color Array (value)
+                    document.write('<font color="blue">' + (i + 1) + o[o.length - 1] + " choice is " + color[i] + '</font>' + "<br>");
+                    break; // keep switch statement from checking remaing case
+                case 6: //value to be compared with expression i
+                    //if value conditon is true, print out Ordinal Numbers(value) + numeric contractions(o Array value) + strine + color Array (value)
+                    document.write('<font color="violet">' + (i + 1) + o[o.length - 1] + " choice is " + color[i] + '</font>' + "<br>");
+                    break; // keep switch statement from checking remaing case
+            }
+        }
+    </script>
 
 </body>
+
 </html>
