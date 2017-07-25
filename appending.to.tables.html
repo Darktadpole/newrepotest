@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+
+    <!--create a table with id-->
+    <table id="myT" border="1">
+
+        <!--create a row with 2 colums-->
+        <tr>
+            <td>Clifford</td>
+            <td>Harris</td>
+
+        </tr>
+
+    </table>
+
+    <!--create input box with value "col1"-->
+    column 1:
+    <input type="text" id="col1">
+    
+    <br>
+    <!--create input box with value "col2"-->
+    column 2:
+    <input type="text" id="col2">
+
+    <br>
+
+    <!--creatd button with onclick function-->
+    <input type="button" value="Insert Row" onclick="ins()">
+
+    <script type="text/javascript">
+
+        //creatd appending to table function
+        function ins() {
+
+            //getting HTML data from table
+            var table = document.getElementById('myT');
+
+            //getting HTML data from input box
+            var data1 = document.getElementById('col1').value;
+
+            //getting HTML data from input box
+            var data2 = document.getElementById('col2').value;
+
+
+
+
+            //create elements for table
+            var tr = document.createElement("tr");
+
+            //create elements for colums
+            var td1 = document.createElement("td");
+            var td2 = document.createElement("td");
+
+
+
+
+            // appending data onto table
+
+            td1.innerHTML = data1;
+            td2.innerHTML = data2;
+            tr.appendChild(td1);
+            tr.appendChild(td2);
+            table.appendChild(tr);
+        }
+
+    </script>
+
+
+</body>
+
+</html>

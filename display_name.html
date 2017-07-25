@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>name display</title>
+</head>
+
+<body>
+
+
+
+
+    <!--create a form web content-->
+    <form>
+
+        <!--create input box with id "fname" and value "Cutries"-->
+        First Name:
+        <input type="text" id="fname" value="Cutris">
+        <br>
+
+        <!--create input box with id "lname" and value "Jackson"-->
+        Last Name:
+        <input type="text" id="lname" value="Jackson">
+        <br>
+
+        <!--create a input button with value and onclick function caller-->
+        <input type="button" value="Submit it" onclick="dd()">
+    </form>
+
+
+    <script type="text/javascript">
+        //	create name display function
+        function dd() {
+
+            // declare varible fname and assign it as the value in fname id input box
+            var fname = document.getElementById("fname").value;
+
+            // declare varible lname and assign it as the value in lname id input box
+            var lname = document.getElementById("lname").value;
+
+            // print out "Hello,fname+lname"	
+            console.log("Hello, " + fname + " " + lname);
+
+        }
+    </script>
+
+
+
+
+
+</body>
+
+</html>

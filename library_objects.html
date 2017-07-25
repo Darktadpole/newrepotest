@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+
+    <script type="text/javascript">
+        // declare varible and assign it with an array of 3 objects
+
+        var library = [{
+                author: 'Bill Gates',
+                title: 'The Road Ahead',
+                readingStatus: true},
+             {
+                author: 'Steve Jobs',
+                title: 'Walter Issacon',
+                readingStatus: true},
+             {
+                author: 'Suzanne Collins',
+                title: 'Mockingjay',
+                readingStatus: false},
+                    ]
+
+
+
+        //create for statement with initial value ,condition and incrementation.
+        for (var i = 0; i < library.length; i++) {
+
+            // set condition of readingStatus === true
+            if (library[i].readingStatus === true) {
+
+                // print out on console
+                console.log("Already read " + library[i].title + " by " + library[i].author + "\n");
+
+                // if pre condition is false
+            } else {
+
+                // print out on console
+                console.log("You still need to read " + library[i].title + " by " + library[i].author + "\n");
+            }
+
+        }
+    </script>
+
+
+</body>
+
+</html>
