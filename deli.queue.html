@@ -1,0 +1,301 @@
+<html>
+<head>
+	
+<style>
+body {
+background: #FA8072 url("bg2.jpg") top fixed;
+color: red;
+
+}
+
+h1 {
+
+color: red;
+text-shadow: 5px 5px black;"
+
+
+}
+
+h3 {
+
+
+color: brown;
+text-shadow: 2px 2px black;"
+
+
+}
+
+
+button {
+  border-radius: 8px;
+ padding: 10px 10px;
+ margin: 0 90px;
+ background-color:rgba(255, 0, 0, 0.8);
+ color: yellow;
+  font-size: 20px;
+  text-shadow: 2px 2px blue;"
+  box-shadow: 10px 10px 10px black;
+}
+
+
+table, th, td {
+ color: brown;
+  margin-left:auto; 
+  margin-right:auto;
+  border: 1px double red;
+  text-align: center;
+}
+
+table{
+
+width: 200%;
+ box-shadow: 2px 2px 2px black;
+}
+
+tbody
+{
+    counter-reset: rowNumber;
+}
+
+tbody tr > td:first-child
+{
+    counter-increment: rowNumber;
+}
+
+tbody tr td:first-child::before
+{
+    content: counter(rowNumber);
+    min-width: 1em;
+    margin-right: 0.5em;
+}
+
+div {text-align: center;
+    margin: 0 auto; 
+  }
+
+</style>
+
+
+</head>
+<body style="font-size: 40px; margin: 55px;">
+
+
+
+<div>
+
+
+<h1>Local Deli Queue</h1>
+
+
+<h3>
+
+<!--create a input value box-->
+  	Customer's Name:
+    <input type="text" id="col1" placeholder="input your name">
+    
+    <br>
+    <!--create a input value box-->
+    Customer's Order:
+    <input type="text" id="col2" placeholder="input your order">
+
+    <br>
+    <br><!--set a button to call the ins function-->
+    <button type="button" onclick="ins()">Add Customer</button>
+
+
+<!--set a button to call the del function-->
+    <button type="button" onclick="del()">Customer Served</button>
+    </h3>
+    
+    <br>
+    <div id="ppp" style="color: brown"></div>
+    <br>
+
+<!--create a table-->
+<table  id="myT" style="width:40%">
+    <thead><tr>
+      <th>Pos.</th>
+      <th>Name</th> 
+      <th>Order</th>
+    </tr>
+
+<!--create a row to display no customer-->
+ <tr id="tr2">
+    <td colspan="3" style="text-align: center;">There are no customers in line</td>
+    
+      </tr></thead>
+
+      <!--the table part for add new rows with-->
+      <tbody id="tb"></tbody>
+     
+</table>
+
+
+
+
+<script>
+	     
+       // decalre length of rows of tbody     
+      var nn2 = document.getElementById("tb").rows.length;
+      // declared a varible and assign it to interger
+      var n2= parseInt(nn2) + parseInt(1);
+
+      //create the array for customer positions
+      var numbers=[];
+
+      //create the array for customer names
+      var customers=[];
+
+      //create the array for customer orders
+      var orders=[];
+
+// varible for mumbers function fr()
+      var a = "";
+
+      // varible for customers function cr()
+      var b = "";
+
+
+      //index for numbers array 
+      var i = 0;
+
+         //index for customers array 
+      var i2 = 0;
+
+
+
+//function to display customer position
+ /*     function  fr(){
+ if( i < numbers.length) {
+    a += numbers[i++] + " , ";
+    return numbers[i-1];
+  }
+  
+}*/
+
+
+//function to display customer name
+function cr(){
+
+if( i2 < customers.length) {
+    b += customers[i2++] + " , ";
+    return customers[i2-1] +" is served";
+  }
+
+}
+
+
+
+//function to create new rows with cells and and to origninal table
+      function ins() {
+
+//declare tbody
+      var tbb = document.getElementById("tb");
+ 
+ //declare and assign the value of customer names input     
+      var data2 = document.getElementById("col1").value;
+      //add this value to customers name array
+      customers.push(data2);
+ 
+  //declare and assign the value of customer orders input      
+      var data3 = document.getElementById("col2").value;
+        //add this value to customers order array
+      orders.push(data3);
+
+//hide the no customer row disapplear
+      document.getElementById("tr2").style.display="none";
+
+//create new row
+   		var tr = document.createElement("tr");
+
+  //create new cells x3 
+      var td1 = document.createElement("td");
+      var td2 = document.createElement("td");
+      var td3 = document.createElement("td");
+
+ /*     var nn2 = document.getElementById("tb").rows.length;
+      var n2= parseInt(nn2) + parseInt(1);
+      numbers.push(n2);*/
+ 
+ //declare columns for input customer postions          
+      td1.innerHTML = "";
+
+ //declare columns for input customer names      
+      td2.innerHTML = data2;
+
+ //declare columns for input customer orders      
+      td3.innerHTML = data3;
+
+//add new cells to new row x3      
+      tr.appendChild(td1);
+      tr.appendChild(td2);
+      tr.appendChild(td3);
+
+//add new row to tbody      
+      tbb.appendChild(tr);
+
+//text holder for display no customer waiting
+      document.getElementById("ppp").innerHTML = ""
+  }
+      
+
+
+//function to delete first customers
+function del(){
+
+//delete 1st customer data
+  document.getElementById('tb').deleteRow(0);
+
+  //call the customer name who is served function 
+  document.getElementById("ppp").innerHTML = cr();
+//tbody rows
+  var nn2 = document.getElementById("tb").rows.length;
+ 
+
+//for rows in tbody is 0,display the hided row 
+   if (nn2 ==0){
+  document.getElementById("tr2").style.display="";
+  //print out no customer waiting
+  document.getElementById("ppp").innerHTML = "There is nobody waiting to be served!";
+ }
+
+}
+
+         
+</script>
+</div>
+</body>
+</html>
+
+
+
+
+
+  
+     
+
+
+         
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+
+
+
+ 
+
